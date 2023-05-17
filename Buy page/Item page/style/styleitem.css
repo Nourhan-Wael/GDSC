@@ -1,0 +1,302 @@
+
+body{
+    background-color: #e6f3ea ;
+    font-family: "myriad-arabic", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:#007254;
+
+}
+
+/* ------------------------header-------------------------- */
+
+header{
+    background-color: #b7ebc7 ;
+    position: absolute;
+    top:0;
+    width: 99%;
+    height: 73px;
+    border-bottom: #007254 5px solid;
+}
+.navbar{
+    width: 90%;
+    margin: 0 auto;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo{
+    float: left;
+    width: 120px;
+    height: 60px;
+    padding: 10px 0;
+    margin-left: -60px;
+}
+header::after{
+    display: table;
+    clear: both;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    margin-left: 60px;
+    padding-top: 20px;
+    position: relative;
+}
+nav a{
+    color: #007254;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: #000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #007254;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 0.5s;
+}
+nav a:hover::before{
+    width: 100%;
+}
+
+.bu1{
+    background-color: #e6f3ea;
+    border: 1px #007254 solid;
+    width: 6em;
+    height: 2em;
+    border-radius: 50px;
+    color: #007254;
+    cursor: pointer;
+    text-align: center;
+
+}
+.bu1:active {
+    color: #007254;
+}
+.bu1:hover:not(:disabled) {
+    background: #007254;
+    color: hsl(0, 0%, 95%);
+}
+.bu2{
+    background-color: rgba(157, 236, 187, 0.685);
+    border: 1px #007254 solid;
+    width: 6em;
+    height: 2em;
+    border-radius: 50px;
+    color: #007254;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+}
+.bu2:active {
+    color: #007254;
+}
+.bu2:hover:not(:disabled) {
+    background: #007254;
+    color: hsl(0, 0%, 95%);
+}
+.search{
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #fff;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+}
+.imgSearch{
+    width: 30px;
+}
+.search:hover input{
+    width: 200px;
+}
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 0.8s;
+    background: transparent;
+}
+.search a .fa{
+    color: #007254;
+    font-size: 18px;
+}
+
+
+/* ----------------------------main  ------------------*/
+
+.main{
+    margin: 10% 5% 5% 10%;
+    display: flex;
+    border-radius: 500px;
+    background-color: #a0cfae ;
+}
+.leftside{
+    margin: -2% 0% -2% -4%;
+    display: flex;
+    border-radius: 5%;
+    background-color:#effff3;
+    width: 40%;
+    opacity: 80%;
+    box-shadow: 2px 2px 8px 4px #809e7b;
+}
+
+
+.img2{
+    width: 50%;
+    height: 50%;
+    margin-left: -40%;
+}
+.rightside{
+    padding: 0% 6% 1% 6%;
+    margin: 0% 5% 0% 1%;
+
+}
+.title{
+    text-align: center;
+    font-style: italic;
+    color: #005f46;
+    font-size: 40px;
+}
+.info{
+    margin-bottom: -5%;
+    color: #005f46;
+}
+.reason{
+    color: white;
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+.price{
+    font-size: 40px;
+    color: #005f46;
+}
+button{
+    text-align: center;
+    color: #007254;;
+    border-radius: 40px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5% 2% 5% 2%;
+    border: 1px solid #e6f3ea;
+    background-color:#e6f3ea;
+    margin-left: 20%;
+    cursor: pointer;
+}
+.leftside:hover{
+    width: 45%;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.add:hover {
+     background-color: #6dfd9f;
+     transition: 0.7s;
+
+ }
+/* responsive navbar toggle button */
+
+.navbar #nav-check, .navbar .nav-btn,.navbar .navl{
+    display: none;
+}
+@media (max-width:800px) {
+    .navbar .nav-btn{
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .navbar .nav-btn label {
+        display: inline-block;
+        width: 40px;
+        height: 23px;
+        padding: 25px;
+    }
+    .navbar .nav-btn label span {
+        display: block;
+        height: 10px;
+        width: 35px;
+        border-top: 3px solid #007254;
+    }
+    .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+        background-color:#0072545d;
+    }
+    .navbar .nav2{
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50%;
+        background-color:rgba(157, 236, 187, 0.685);
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .btn-header{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    nav .btn-header .bu1{
+        margin-left: 10px;
+    }
+
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked) ~ .nav2 {
+        height: 0px;
+    }
+
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked ~ .nav2 {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    .navbar .loginBtn {
+        margin-bottom: 10px;
+        font-size:  18px;
+        font-weight: bold;
+        color: #007254;
+        margin-right:75px ;
+        display: block;
+    }
+    .main{
+        border-radius: 10px;
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+        margin-top:15%;
+    }
+    .leftside{
+        position: relative;
+        left:9%;
+        width: 90%;
+        margin: 8% 0% -2% -4%;
+    }
+
+}
+
