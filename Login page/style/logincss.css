@@ -1,0 +1,432 @@
+body{
+    background-color: #e6f3ea ;
+    font-family: "myriad-arabic", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:#007254;
+}
+*{
+    color:#007254;
+
+}
+
+header{
+    position: fixed;
+    background-color: #b7ebc7 ;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 73px;
+    border-bottom: #007254 5px solid;
+}
+.navbar{
+    width: 90%;
+    margin: 0 auto;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo{
+    float: left;
+    width: 120px;
+    height: 60px;
+    padding: 10px 0;
+    margin-left: -60px;
+}
+header::after{
+    /*content: '';*/
+    display: table;
+    clear: both;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    /*display: inline-block;*/
+    margin-left: 20px;
+    padding-top: 20px;
+
+    position: relative;
+}
+nav a{
+    color: #007254;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+nav a:hover{
+    color: #000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #007254;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 0.5s;
+}
+nav a:hover::before{
+    width: 100%;
+}
+
+.bu1{
+    background-color: #e6f3ea;
+    border: 1px #007254 solid;
+    font-size: 18px;
+    font-weight: 400;
+    width: 6em;
+    height: 2em;
+    border-radius: 50px;
+    color: #007254;
+    cursor: pointer;
+    text-align: center;
+    /*margin-left: 1100px;*/
+    /*margin-left: 350px;*/
+}
+.bu1:active {
+    color: #007254;
+}
+.bu1:hover:not(:disabled) {
+    background: #007254;
+    color: hsl(0, 0%, 95%);
+}
+.bu2{
+    background-color: rgba(157, 236, 187, 0.685);
+    border: 1px #007254 solid;
+    font-size: 18px;
+    font-weight: 400;
+    width: 6em;
+    height: 2em;
+    border-radius: 50px;
+    color: #007254;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+    /*margin-right: -30px;*/
+}
+.bu2:active {
+    color: #007254;
+}
+.bu2:hover:not(:disabled) {
+    background: #007254;
+    color: hsl(0, 0%, 95%);
+}
+.search{
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #fff;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+}
+.imgSearch{
+    width: 30px;
+}
+.search:hover input{
+    width: 200px;
+}
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 0.8s;
+    background: transparent;
+}
+.search a .fa{
+    color: #007254;
+    font-size: 18px;
+}
+
+.box{
+     position: absolute;
+     left: 13%;
+     top: 21%;
+     width: 1126px;
+     height: 500px;
+     background-color: #4ddba2;
+     border-radius: 10px;
+ }
+/*.box2{*/
+/*    position: absolute;*/
+/*    left: 715px;*/
+/*    top: 159px;*/
+/*    width: 580px;*/
+/*    height: 498px;*/
+/*    background-color: #e6f3ea;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: #007254;*/
+/*}*/
+.box2::before {
+    content: "";
+    background-color: #e6f3ea;
+    position: absolute;
+       left: 733px;
+        top: 159px;
+        width: 580px;
+        height: 498px;
+    /*background: linear-gradient(-45deg, #098b4f, #007254);*/
+
+}
+.container{
+    position: absolute;
+    left: 850px;
+    top: 180px;
+
+}
+.logimage{
+    position: absolute;
+    top:-11px;
+    left:-12px;
+
+}
+.wavedown{
+    position:relative;
+    bottom: 691px;
+    right: 9px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.sign-in-form{
+    /*position: absolute;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.remeberme{
+    position: relative;
+    top:-38px;
+    right:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot{
+    position: relative;
+    right:-60px;
+}
+.loginbottom{
+    position: relative;
+    top:-13px;
+    width: 306px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: #4ddba2;
+}
+.loginbottom2{
+    position: relative;
+    top:32px;
+    width: 306px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: #4ddba2;
+}
+.google{
+    position: relative;
+    top: -41px;
+    left: 30px;
+}
+.account-text{
+    position: relative;
+    bottom:53px;
+    left:37px;
+}
+
+.logintext{
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -4px;
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+form.sign-in-form {
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+    transition-delay: 1s;
+}
+.welcome{
+    font-weight: unset;
+    font-style: italic;
+    font-size: 13px;
+    position: relative;
+    bottom:30px
+}
+.email{
+    font-size: 18px;
+    position: relative;
+    right: 195px;
+    top: -47px;
+}
+.password{
+    font-size: 18px;
+    position: relative;
+    right: 180px;
+    top: -60px;
+}
+
+input[type=text2], select {
+    width: 220%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #06962f;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    right: 120px;
+    top:-55px;
+}
+input[type=password], select {
+    width: 220%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #06962f;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    right: 120px;
+    top:-64px;
+}
+.sign-in-form{
+    position: relative ;
+    /*bottom :360px;*/
+    left:14px;
+
+}
+a:hover{
+    color: #007254;
+}
+/* responsive navbar toggle button */
+.navbar #nav-check, .navbar .nav-btn,.navbar .navl{
+    display: none;
+}
+@media (max-width:800px) {
+    .navbar .nav-btn{
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 10;
+    }
+    .navbar .nav-btn label {
+        display: inline-block;
+        width: 40px;
+        height: 23px;
+        padding: 25px;
+    }
+    .navbar .nav-btn label span {
+        display: block;
+        height: 10px;
+        width: 35px;
+        border-top: 3px solid #007254;
+    }
+    .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+        background-color:#0072545d;
+    }
+    .navbar .nav2{
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50%;
+        background-color:rgba(157, 236, 187, 0.685);
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
+        z-index: 11;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .btn-header{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    nav .btn-header .bu1{
+        margin-left: 10px;
+    }
+
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked) ~ .nav2 {
+        height: 0px;
+    }
+
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked ~ .nav2 {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    .navbar .loginBtn {
+        margin-bottom: 10px;
+        font-size:  18px;
+        font-weight: bold;
+        color: #007254;
+        margin-right:75px ;
+        display: block;
+        z-index: 12;
+    }
+
+}
+@media (max-width: 780px) {
+
+    .box2::before{
+        content: "";
+        background-color: #e6f3ea;
+        position: relative;
+        left: 715px;
+        top: 159px;
+        width: 580px;
+        height: 498px;
+        z-index: -1;
+    }
+    input[type=text2], select {
+        width: 220%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid #06962f;
+        border-radius: 10px;
+        box-sizing: border-box;
+        position: relative;
+        right: 120px;
+        top:-55px;
+        z-index: -1;
+    }
+    input[type=password], select {
+        width: 220%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid #06962f;
+        border-radius: 10px;
+        box-sizing: border-box;
+        position: relative;
+        right: 120px;
+        top:-64px;
+        z-index: -1;
+    }
+
+    .box {
+        display: none;
+    }
+}
+
