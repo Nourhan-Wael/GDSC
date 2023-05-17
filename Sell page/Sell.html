@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sell</title>
+    <link rel="stylesheet" href="./style/sell.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rmt1bwj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--     favicon -->
+    <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/ios-filled/50/40C057/replace.png">
+</head>
+<header>
+    <div class="navbar">
+
+        <img src="./media/logo.png" alt="logo" class="logo">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <nav class="nav2">
+            <ul>
+                <li><a href="./Home page/index.html">Home</a></li>
+                <li><a href="./Home page/index.html#about">About Us</a></li>
+                <li><a href="./Home page/index.html#join">Join Us</a></li>
+                <li>
+                    <div class="search">
+                        <input type="text" placeholder="search">
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn-header">
+                <button class="bu1"> <a href="./Login page/login.html" target="_blank">Log in</a></button>
+                <button class="bu2"> <a href="./Sign page/signin1.html" target="_blank">Sign in</a></button>
+            </div>
+        </nav>
+
+
+    </div>
+</header>
+<body>
+<!-- ---------------------header---------------------- -->
+
+<!-- ----------------------------main---------------------------------- -->
+<div class="main">
+
+    <form action="/action_page.php" class="sell">
+        <h2 class="formcaption">Sell Your Used Product</h2>
+        <caption>Uplod a clear photo of your product</caption><br><br>
+
+        <label for="myFile" >
+            <img class="uplod" src="./media/uplod icon.png">
+            <span class="Fbutton">Uplod Photo</span>
+            <span class="Ftext">*can be more one photo*</span>
+            <input type="file" id="myFile" name="filename" class="file"  multiple >
+        </label><br><br>
+
+        <label for="foption">Select your product catogry </label>
+        <select name="foption" id="foption">
+            <option value="Choose">Choose</option>
+            <option value="Children">Children</option>
+            <option value="Devices">Devices</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Sports">Sports</option>
+            <option value="Homeware">Homeware</option>
+        </select><br><br>
+
+        <label for="soption">Select your use of product  </label>
+        <select name="soption" id="soption">
+            <option value="Choose">Choose</option>
+            <option value="Months">1:11 Months</option>
+            <option value="Years">1:2 Years</option>
+            <option value="more years">+2 Years</option>
+            <option value="not used">Not in used</option>
+        </select><br><br>
+
+        <label for="price">Product Price : </label>
+        <input type="text" id="price" name="price"><br><br>
+        <label for="info">Product Info : </label><br>
+        <textarea name="message" rows="2" cols="30"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="rightside">
+        <h2 class="imgcaption">THANK You<br>FOR ZERO WASTING !!</h2>
+        <img class="img" src="./media/sell.png">
+    </div>
+</div>
+
+</body>
+</html>
+
