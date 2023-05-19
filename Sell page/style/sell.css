@@ -165,28 +165,8 @@ nav a:hover::before{
     border-radius: 30px;
     background-color: #27ca9f;
 }
-.rightside{
-    width: 55%;
-}
-.img{
-    margin-top: 3%;
-    width: 100%;
-    height: 100%;
-}
 
-.formcaption{
-    text-align: center;
-    font-style: normal;
-    border: 2px solid #cdf3d8;
-    border-radius: 50px;
-    background-color:#cdf3d8;
-}
-.imgcaption{
-    text-align: center;
-    position:absolute;
-    color: white;
-    margin-left: 12%;
-}
+/* ---------------form--------------- */
 form.sell{
     padding: 0% 6% 1% 6%;
     margin: 0% 5% 0% 1%;
@@ -197,7 +177,14 @@ form.sell{
     box-shadow: 2px 2px 8px 4px #809e7b;
     border-radius: 30px;
 
+}
 
+.formcaption{
+    text-align: center;
+    font-style: normal;
+    border: 2px solid #cdf3d8;
+    border-radius: 50px;
+    background-color:#cdf3d8;
 }
 
 .file{
@@ -223,6 +210,17 @@ form.sell{
     padding-left: 5%;
 }
 
+form.sell select{
+    color: white;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1%;
+    border: 1px solid #5a9b8a;
+    background-color:#5a9b8a;
+    margin-left: 2%;
+}
+
 form.sell input[name=price]{
     width: 6%;
     height: 5%;
@@ -235,16 +233,7 @@ form.sell textarea{
     border-radius: 10px;
 }
 
-form.sell select{
-    color: white;
-    border-radius: 10px;
-    font-style: italic;
-    font-weight: bold;
-    padding: 1%;
-    border: 1px solid #5a9b8a;
-    background-color:#5a9b8a;
-    margin-left: 2%;
-}
+
 
 button{
     justify-items: center;
@@ -259,6 +248,22 @@ button{
     margin-left: 20%;
     margin-top: 2%;
 
+}
+/* ---------------Photo--------------- */
+.rightside{
+    width: 55%;
+}
+.imgcaption{
+    text-align: center;
+    position:absolute;
+    color: white;
+    margin-left: 12%;
+}
+
+.img{
+    margin-top: 3%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -331,6 +336,7 @@ button{
         margin-right:75px ;
         display: block;
     }
+    /* --------------------main responsive----------- */
     .main{
         display:flex;
         flex-direction:column;
